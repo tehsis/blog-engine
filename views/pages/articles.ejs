@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+<div id="skeleton">
+    <% include ../partials/header.ejs %>
+    <div id="main" class="articles-list">
+        <% articles.forEach(function(article) { %>
+            <a class="article-link" href="articles/<%= article.id %>">[<span style="font-size: 0.8rem;"><%= article.date %></span>, <%= article.title %>]</a>
+        <% }); %>
+    </div>
+    <% include ../partials/footer.ejs %>
+</div>
+<% include ../partials/gtag.ejs %>
+</body>
+</html>

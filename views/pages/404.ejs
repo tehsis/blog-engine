@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+
+<div id="skeleton">
+    <% include ../partials/header.ejs %>
+    <div id="main" class="error-404">
+        <div>
+            <img src="<%= ejs_helpers.assemble_img_link('404.gif')%>" alt="Not found.">
+        </div>
+        <div>404</div>
+    </div>
+    <% include ../partials/footer.ejs %>
+</div>
+<% include ../partials/gtag.ejs %>
+</body>
+</html>

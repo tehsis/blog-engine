@@ -1,0 +1,97 @@
+body {
+    font-family: Monaco, sans-serif;
+    font-size: 1rem;
+    background-color: rgb(40, 42, 54);
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header > .main-logo {
+    width: 85px;
+    padding: 10px 10px 10px 20px;
+}
+
+#header > .main-logo > img {
+    width: 100%;
+    vertical-align: middle;
+    object-fit: contain;
+}
+
+#header > .main-toolbar {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+#header > .main-toolbar > div > a {
+    color: rgb(80, 250, 123);
+    text-decoration: none;
+}
+
+#header > .main-toolbar > div > a:hover {
+    color: rgb(255, 85, 85);
+    text-decoration: underline;
+}
+
+@media (max-width: 414px) {
+    #header > .main-toolbar {
+        font-size: 0.85rem;
+        width: 100%;
+    }
+}
+
+#skeleton {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    background-color: rgb(20, 22, 34);
+    flex-grow: 1;
+    padding: 0 0 30px 0;
+}
+
+#footer > .links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.85rem;
+    padding: 25px;
+}
+
+#footer > .links > a {
+    color: azure;
+    text-decoration: none;
+}
+
+#footer > .links > a:hover {
+    text-decoration: underline;
+}
+
+#footer > .text {
+    padding: 25px;
+    text-align: center;
+    background-color: black;
+    font-size: 0.70rem;
+    color: rgb(255, 121, 198);
+}
+
+#footer > .text > div {
+    padding: 2px;
+}
+
+.error-404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2rem;
+    color: red;
+}

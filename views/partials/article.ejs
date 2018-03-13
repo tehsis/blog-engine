@@ -1,0 +1,16 @@
+<div class="article">
+    <div class="article-title"><%= article.title %></div>
+    <div class="article-date"><%= article.date %></div>
+
+    <div class="article-content">
+        <div class="article-main">
+            <% article.content.sections.forEach((section) => { %>
+            <%- include('../templates/'+section.template, {"fields": section.fields }) %>
+            <% }); %>
+        </div>
+    </div>
+
+    <% if(terminator === true) { %>
+    <div class="article-terminator"></div>
+    <% } %>
+</div>

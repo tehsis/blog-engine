@@ -1,0 +1,19 @@
+{
+  "name": "nodeux-blog",
+  "version": "1.3.0-alpha",
+  "description": "NodeUx Blog App",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "toolbelt/writer": "node tools/nodeux-article-writer/executor.js",
+    "test": "mocha --recursive"
+  },
+  "author": "Alexis Charytonow",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mocha": "^5.0.4"
+  },
+  "devDependencies": {}
+}

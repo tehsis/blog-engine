@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ../partials/head.ejs %>
+</head>
+<body>
+<div id="skeleton">
+    <% include ../partials/header.ejs %>
+    <div id="main">
+        <% articles.forEach(function(article) { %>
+        <%- include('../partials/article.ejs', {article, terminator:false}) %>
+        <% }); %>
+    </div>
+    <% include ../partials/footer.ejs %>
+</div>
+<% include ../partials/gtag.ejs %>
+</body>
+</html>

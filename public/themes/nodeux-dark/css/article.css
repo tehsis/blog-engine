@@ -1,0 +1,49 @@
+.article {
+    color: rgb(220, 220, 210);
+}
+
+.article > .article-title {
+    color: rgb(255, 121, 198);
+    text-align: center;
+    padding: 30px 0 0 0;
+    font-size: 1.3rem;
+    text-decoration: underline;
+}
+
+.article > .article-date {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.article > .article-content {
+    width: 95%;
+    text-align: justify;
+    line-height: 1.6rem;
+    margin: auto;
+}
+
+.article > .article-content > a {
+    color: rgb(255, 121, 198);
+    text-decoration: none;
+}
+
+.article > .article-content > a:hover {
+    text-decoration: underline;
+}
+
+.article > .article-terminator {
+    border-top: 1px solid rgb(189, 147, 249);
+    width: 95%;
+    margin: 25px auto 0 auto;
+}
+
+.article > .article-content > .article-main > .p-graph > .p-subtitle {
+    font-size: 1.1rem;
+    color: rgb(255, 184, 108);
+    text-decoration: underline;
+    padding: 0 0 10px 0;
+}
+
+.article > .article-content > .article-main > .p-graph > .p-main {
+    padding: 0 0 10px 10px;
+}
