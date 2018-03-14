@@ -9,6 +9,7 @@
     margin: 10px 0 0 0;
     color: rgb(255,184,108);
     text-decoration: none;
+    text-align: center;
 }
 
 #main > a.article-link:hover {

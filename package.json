@@ -1,7 +1,7 @@
 {
-  "name": "nodeux-blog",
-  "version": "1.3.0-alpha",
-  "description": "NodeUx Blog App",
+  "name": "blog-engine",
+  "version": "1.4.2-alpha",
+  "description": "This is a blog engine for programmers.",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js",
