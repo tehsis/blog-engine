@@ -92,6 +92,10 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: red;
+}
+
+.error-404 img {
+    width: 100%;
 }
