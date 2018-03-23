@@ -17,38 +17,37 @@ function execute() {
     };
 
     const mySections = [
-            {
-                template: "basic-template",
-                fields: {
-                    subtitle: "Philosophy",
-                    text: "Plain and simple, this is a blog for programmers, not regular users. What does that mean? I'm writing code everyday all the time, that means I can optimize how I do things, so why should I use a super sophisticated system with a lot of plugins, databases filled up with tables (or documents), users, security issues, whatsoever if I only want to share some simple tech articles? It just simply doesn't make any sense. So, I created my own blog engine to write posts using the everyday tool of a programmer, plain text editors and coding skills."
-                }
-            },
-            {
-                template: "basic-template",
-                fields: {
-                    subtitle: "Basic Usage",
-                    text: "1. Clone it. <br> 2. Install dependencies and run dev web server. <br> 3. Edit this article, rebuild it and see it in action. <br> 4. Add consistency test. <br> 5. Enjoy."
-                }
-            },
-            {
-                template: "snippet-template",
-                fields: {
-                    lang: "bash",
-                    code: snippetReader.setSnippet('about-nodeux.sh').read()
-                }
-            },
-            {
-                template: "basic-template",
-                fields:
-                    {
-                        subtitle: "To be continued ...",
-                        text:
-                            "This article is under development, sync up soon."
-                    }
+        {
+            template: "basic-template",
+            fields: {
+                subtitle: "Motivation",
+                text: "The motivation behind Nodeux's Blog Engine is quite simple, a tool to publish technical articles or thoughts for programmers. Let me explain. If I have to say what is the tool that as a programmer I use every single day it would be a text editor. Now, as a programmer I have some other skills that allows me to optimize a lot of tasks I do everyday. Last but not least, what if I want to test out my knowledge in real life? e.g. Let's say that I've just learned how to use Vue.js, right? What if I want to test it in a real environment? Exactly, it wouldn't make any sense to create proof of concepts, instead of really doing it."
             }
-        ]
-    ;
+        },
+        {
+            template: "basic-template",
+            fields: {
+                subtitle: "Basic Usage",
+                text: "1. Clone it. <br> 2. Install dependencies and run dev web server. <br> 3. Edit this article, rebuild it and see it in action. <br> 4. Add consistency test. <br> 5. Enjoy."
+            }
+        },
+        {
+            template: "snippet-template",
+            fields: {
+                lang: "bash",
+                code: snippetReader.setSnippet('about-nodeux.sh').read()
+            }
+        },
+        {
+            template: "basic-template",
+            fields:
+                {
+                    subtitle: "To be continued ...",
+                    text:
+                        "This article is under development, sync up soon."
+                }
+        }
+    ];
 
     mySections.forEach((s) => {
         myArticle.main.content.sections.push(s);
