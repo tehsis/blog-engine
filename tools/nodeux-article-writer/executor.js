@@ -1,5 +1,6 @@
 const path = require('path');
 const articles = [
+    'snippets-in-java',
     'about-nodeux'
 ];
 

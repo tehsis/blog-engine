@@ -1,7 +1,6 @@
 function execute() {
 
     const
-        snippetReader = require('../helpers/snippet-reader'),
         articleWriter = require('../helpers/article-writer');
 
     const myArticle = {
