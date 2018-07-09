@@ -30,6 +30,20 @@ function execute() {
                 lang: "java",
                 code: snippetReader.setSnippet('singleton-in-java.java').read()
             }
+        },
+        {
+            template: "basic-template",
+            fields: {
+                subtitle: "Builder",
+                text: "Builder in Java, Sandwich Object Example."
+            }
+        },
+        {
+            template: "snippet-template",
+            fields: {
+                lang: "java",
+                code: snippetReader.setSnippet('builder-in-java.java').read()
+            }
         }
     ];
 
