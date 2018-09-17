@@ -1,13 +1,22 @@
 const
     fs = require('fs'),
-    path = require('path');
+    path = require('path'),
+    tmpPath = path.join(__dirname, '../../../tmp');
 
 function createArticle(params) {
     return {
-        "publishTemp": () => {
-            fs.writeFileSync(path.join(__dirname, '../../../tmp', params.main.id + '.json'), JSON.stringify(params.main), 'utf8');
+        publishTemp: () => {
+            try {
+                fs.mkdirSync(tmpPath);
+            } catch (e) {
+                if (e.code !== 'EEXIST') {
+                    throw e;
+                }
+            }
+
+            fs.writeFileSync(path.join(tmpPath, `${params.main.id}.json`), JSON.stringify(params.main), 'utf8');
         },
-        "publish": () => {
+        publish: () => {
             let articlesJSONPath = path.join(__dirname, '../../../db/articles.json');
             let articlesJSON = JSON.parse(fs.readFileSync(articlesJSONPath, 'utf8'));
             let article_updated = false;

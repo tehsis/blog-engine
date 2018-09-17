@@ -6,8 +6,8 @@ const articles = [
 
 console.log('Nodeux Blog Engine ...');
 
-for (let a of articles) {
-    process.stdout.write('Compiling ' + a + ' ...');
+for (const a of articles) {
+    process.stdout.write(`Compiling ${a} ...`);
     require(path.join(__dirname, 'articles', a)).execute();
     process.stdout.write(' done.\n');
 }
